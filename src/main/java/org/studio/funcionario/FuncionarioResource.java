@@ -25,14 +25,4 @@ public class FuncionarioResource {
 	public Funcionario findByNome(@PathParam("nome") String nome) {
 		return funcionarioRepository.findByNome(nome);
 	}
-
-	@GET
-	@Path("/init")
-	@Transactional
-	//TODO Remover apos criacao da stack de testes
-	public void init() {
-		Funcionario funcionario1 = new Funcionario("Karina");
-		funcionarioRepository.persist(funcionario1);	
-	}
-
 }

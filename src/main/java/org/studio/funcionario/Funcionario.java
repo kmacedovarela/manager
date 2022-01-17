@@ -8,7 +8,6 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 public class Funcionario extends PanacheEntity{
 	
 	public Funcionario() {
-	
 	}
 	
 	public Funcionario(String nome) {
